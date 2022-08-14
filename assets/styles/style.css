@@ -1,4 +1,11 @@
 .hovereffects:hover {
     color: white;
     cursor: pointer;
+    transition: all .25s;
+}
+
+.hovereffects {
+    color: rgb(41, 43, 44);
+    cursor: pointer;
+    transition: all .25s;
 }
