@@ -12,7 +12,7 @@
     <title>E-Commerce</title>
 </head>
 
-<body>
+<body class="bg-secondary">
     <nav class="navbar navbar-expand-md navbar-light bg-secondary">
         <div class="container">
             <button
@@ -49,7 +49,8 @@
         </div>
     </nav>
     <header>
-        <div id="carouselExampleDark" class="border-top border-dark carousel carousel-dark slide carouselHeight"
+        <div id="carouselExampleDark"
+            class="border-top border-bottom border-dark carousel carousel-dark slide carouselHeight"
             data-bs-ride="carousel">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
@@ -60,10 +61,11 @@
                     aria-label="Slide 3"></button>
             </div>
             <div class="carousel-inner">
-                <div class="carousel-item active" data-bs-interval="10000">
-                    <img src="../imgs/Screenshot_67.png" class="d-block w-100" alt="Camisas">
+                <div class="carousel-item active" data-bs-interval="5000">
+                    <a href="../pages/produtos.html">
+                        <img src="../imgs/Screenshot_67.png" class="d-block w-100" alt="Camisas"></a>
                 </div>
-                <div class="carousel-item" data-bs-interval="10000">
+                <div class="carousel-item" data-bs-interval="5000">
                     <img src="../imgs/Screenshot_65.png" class="d-block w-100" alt="Bermudas">
                 </div>
                 <div class="carousel-item">
@@ -82,8 +84,54 @@
             </button>
         </div>
     </header>
-    <section>
-
+    <section class="container">
+        <h1 class="my-5 d-flex justify-content-center">Bem Vindo</h1>
+        <hr>
+        <h1 class="my-5 d-flex justify-content-center">Sobre nós</h1>
+        <div class="my-3 px-2 accordion w-50 flex-column d-flex w-100" id="accordionFlushExample">
+            <div class="accordion-item w-100">
+                <h2 class="accordion-header" id="flush-headingOne">
+                    <button class="accordion-button collapsed btn btn-outline-dark" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false"
+                        aria-controls="flush-collapseOne">
+                        Quem Somos?
+                    </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse bg-dark text-light"
+                    aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Somos uma revendedora de roupas 100% on-line com o intuito de
+                        facilitar
+                        suas compras na internet</div>
+                </div>
+            </div>
+            <div class="accordion-item w-100">
+                <h2 class="accordion-header" id="flush-headingTwo">
+                    <button class="accordion-button collapsed btn btn-outline-dark" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                        aria-controls="flush-collapseTwo">
+                        Como Começamos?
+                    </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body bg-dark text-light">Começamos usando um host gratuito e um estoque
+                        muito
+                        pequeno (trez
+                        items)
+                        hoje em dia já possuimos uma sed em toronto(Canada) e mais de dez mil items no estoque</div>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex justify-content-center w-100">
+            <div class="card bg-gradient" style="width: 18rem;">
+                <i class="bi bi-cart d-flex justify-content-center align-items-center" style="font-size: 5rem;"></i>
+                <div class="card-body">
+                    <h5 class="card-title"></h5>
+                    <p class="card-text d-flex justify-content-center">Precisa de alguma coisa?</p>
+                    <a href="" class="btn btn-outline-dark d-flex justify-content-center">Contate-Nos</a>
+                </div>
+            </div>
+        </div>
     </section>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
         integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
